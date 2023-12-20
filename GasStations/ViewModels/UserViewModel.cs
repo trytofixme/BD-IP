@@ -121,7 +121,7 @@ namespace GasStations.ViewModels
                 }
                 if (flag && ch != '(') status += ch;
             }
-            if (status == "Менеджер" || status == "Директор")
+            if (status == "Менеджер" || (status == "Директор" && SelectedTableName == "Остатки"))
             {
                 _dbManager.Update(_tableNames[SelectedTableName], columnName, rowId, newValue);
             }            
