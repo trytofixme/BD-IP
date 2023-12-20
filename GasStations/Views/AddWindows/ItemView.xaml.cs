@@ -22,12 +22,11 @@ namespace GasStations.Views.AddWindows
         
         private void AddButton_OnClick(object sender, RoutedEventArgs e)  
         {  
-            if (!string.IsNullOrEmpty(NameTextBox.Text) || !string.IsNullOrEmpty(MeasuringUnitTextBox.Text) ||
-                !string.IsNullOrEmpty(МanufacturerTextBox.Text) || !string.IsNullOrEmpty(ItemTypeTextBox.Text))  
+            if (!string.IsNullOrEmpty(NameTextBox.Text) || !string.IsNullOrEmpty(MeasuringUnitTextBox.Text) 
+                || !string.IsNullOrEmpty(ItemTypeTextBox.Text))  
             {
                 _itemsToAdd.Add(NameTextBox.Text ?? "");
                 _itemsToAdd.Add(MeasuringUnitTextBox.Text ?? "");
-                _itemsToAdd.Add(МanufacturerTextBox.Text ?? "");
                 _itemsToAdd.Add(ItemTypeTextBox.Text ?? "");
                 _userVm.InsertTableRows(_itemsToAdd.ToArray());
                 Close();

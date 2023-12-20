@@ -60,14 +60,6 @@ namespace GasStations.Views
                     var itemView = new ItemView(_userVm);
                     itemView.Show();
                     break;
-                case "Покупки":
-                    var purachseView = new PurchaseView(_userVm);
-                    purachseView.Show();
-                    break;
-                case "Продажи":
-                    var saleView = new SaleView(_userVm);
-                    saleView.Show();
-                    break;
                 case "Точки продажи":
                     var shopView = new ShopView(_userVm);
                     shopView.Show();

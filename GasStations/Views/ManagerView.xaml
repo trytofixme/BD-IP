@@ -150,18 +150,6 @@
                             Click="TableNameButton_OnClick"
                         />
                         <RadioButton
-                            Content="Покупки"
-                            Style="{StaticResource TableNameButtonStyle}"
-                            Margin="0,5,0,0"
-                            Click="TableNameButton_OnClick"
-                        />
-                        <RadioButton
-                            Content="Продажи"
-                            Style="{StaticResource TableNameButtonStyle}"
-                            Margin="0,5,0,0"
-                            Click="TableNameButton_OnClick"
-                        />
-                        <RadioButton
                             Content="Точки продажи"
                             Style="{StaticResource TableNameButtonStyle}"
                             Margin="0,5,0,0"

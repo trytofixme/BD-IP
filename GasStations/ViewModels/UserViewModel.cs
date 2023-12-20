@@ -64,10 +64,6 @@ namespace GasStations.ViewModels
             {
                 _dbManager.Reconnect();
                 GridData = _dbManager.GetDataGrid(_tableNames[SelectedTableName]);
-                // foreach (DataColumn col in GridData.Table.Columns)
-                // {
-                //     col.ReadOnly = true;
-                // }
             }
             catch (Exception)
             {
@@ -111,8 +107,24 @@ namespace GasStations.ViewModels
 
         public void UpdateTableRows(string columnName, object rowId, string newValue)
         {
-            _dbManager.Update(_tableNames[SelectedTableName], columnName, rowId, newValue);
-            //GridData = _dbManager.GetDataGrid(_tableNames[SelectedTableName]);
+            string status = "";
+            bool flag = false;
+            foreach (var ch in status)
+            {
+                if (ch == '(')
+                {
+                    flag = true;                   
+                }
+                else if (ch == ')')
+                {
+                    flag = false;
+                }
+                if (flag && ch != '(') status += ch;
+            }
+            if (status == "Менеджер" || status == "Директор")
+            {
+                _dbManager.Update(_tableNames[SelectedTableName], columnName, rowId, newValue);
+            }            
         }
     }
 }

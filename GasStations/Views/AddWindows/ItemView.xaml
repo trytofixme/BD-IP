@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Заполните данные"
-        Height="250"
+        Height="220"
         Width="400">
         <Window.Style>
         <Style TargetType="{x:Type Window}">
@@ -126,28 +126,15 @@
                  Name="MeasuringUnitTextBox"
                  VerticalAlignment="Top"
                  Style="{StaticResource AdressBarTextBoxStyle}"/>
-        <Label Content="Производитель"
-               Height="28"
-               HorizontalAlignment="Left"
-               Margin="5, 80, 0, 0"
-               Name="МanufacturerLabel"
-               VerticalAlignment="Top"/>
-        <TextBox Height="23"
-                 HorizontalAlignment="Left"
-                 Margin="130, 82, 0, 0"
-                 Width="247"
-                 Name="МanufacturerTextBox"
-                 VerticalAlignment="Top"
-                 Style="{StaticResource AdressBarTextBoxStyle}"/>
         <Label Content="Тип товара"
                Height="28"
                HorizontalAlignment="Left"
-               Margin="5, 110, 0, 0"
+               Margin="5, 80, 0, 0"
                Name="ItemTypeLabel"
                VerticalAlignment="Top"/>
         <TextBox Height="23"
                  HorizontalAlignment="Left"
-                 Margin="130, 112, 0, 0"
+                 Margin="130, 82, 0, 0"
                  Width="247"
                  Name="ItemTypeTextBox"
                  VerticalAlignment="Top"
@@ -155,7 +142,7 @@
         <Button Content="Добавить"
                 Height="23"
                 HorizontalAlignment="Left"
-                Margin="218, 155, 0, 0"
+                Margin="218, 125, 0, 0"
                 Name="OknButton"
                 VerticalAlignment="Top"
                 Width="75"
@@ -164,7 +151,7 @@
         <Button Content="Отмена"
                 Height="23"
                 HorizontalAlignment="Left"
-                Margin="302, 155, 0, 0"
+                Margin="302, 125, 0, 0"
                 Name="RejectButton"
                 VerticalAlignment="Top"
                 Width="75"
